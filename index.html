@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content"width=device-width, inital scale=1" >
-<link rel="stylesheet" type="text/css"	href="w3.css">
-<title> Mogi's Static Web Sandbox </title>
-
-
-<h1> Welcome to the Mogi's Static Web Sandbox!</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Demos</title>
+    <link rel="stylesheet" type="text/css" href= "assets/css/style.css">
+</head>
 <body>
-<!-- Navigation bar -->
-<div class="w3-container w3-black">
-  <a href="#home" class="w3-button w3-bar-item">Home</a>
-</div>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </div>
 
-<section class="w3-container w3-center" style="max-width:600px">
-  <h2>Overview</h2>
-  <p = class="w3-opacity">This project serves a demonstration of various parts of web development, and serves as a sandbox for me to experiment with HTML, CSS, and Javascript.</p>
-</section>
+    <header>
+        <h1>Static Demos:</h1>
+    </header>
 
-<!-- API call will be migrated to a API page.
-<p id="htmltemp"> loading temperature standby</p>
-<script src="script.js"></script>
--->
+    <main>
+        <section id="home">
+          <br><br><br>
+            <h2>My recent demos:</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3><a href="demos/weather-api-fetcher.html">Weather API Fetcher</a></h3>
+                    <p>My first look into how APIs are used in the form of a weather applet.</p>
+                </div>
+                <!-- More project cards go here -->
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <a href="https://github.com/Mogi83">GitHub</a>
+        <a href="https://mogi83.github.io">Blog</a>
+        <button onclick="toggleLightMode()">Toggle dark mode</button>
+    </footer>
+
+    <script>
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+        function toggleLightMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
