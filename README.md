@@ -6,7 +6,7 @@ Welcome to my Static Web Demo repository! This repository showcases a variety of
 
 ## Getting Started
 
-You can view the live site at this link [Static Web Demos](https://mogi83.github.io/Static-Web-Sandbox/). To explore locally:
+You can view the live site at this link [Static Web Demos](https://mogi83.github.io/Static-Web-Demos/). To explore locally:
 
 1. **Clone the Repository:**
    ```
